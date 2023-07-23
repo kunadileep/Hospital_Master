@@ -5,9 +5,9 @@
 
 
 ## CONTRIBUTORS:
-1.Kuna Sai Dileep Kumar
-2.Bandala Pavan Adithya
-3.Pathivada Saran Teja
+#1.Kuna Sai Dileep Kumar
+#2.Bandala Pavan Adithya
+#3.Pathivada Saran Teja
 
 
 
