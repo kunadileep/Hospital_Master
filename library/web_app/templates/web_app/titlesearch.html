@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <title>books list</title>
+  <style>
+ body{
+  background-color:#E8E8E8;
+}
+nav{
+width:100%;
+margin:auto;
+position:fixed;
+height:70px;
+background-color:rgba(0,0,0,1);
+z-index:9999;
+}
+
+
+
+
+  </style>
+</head>
+<body>
+<br>
+<div>
+ <table style="width:80vw;margin:auto;">
+<tr>
+</tr>
+</form>
+</table>
+</div style="float:right;">
+<div>
+ <h4 style="text-align:center">Results</h3>
+ <hr> 
+<table style="width:100vw;">
+<tr>
+
+
+{% for book in books %}
+<div class="books" style="background-color:white;border-radius:7px;margin:20px;padding:6px;">
+<table>
+<td style="padding:5px 30px;width:10vw;">
+<h6><a href="{% url 'single_book' %}">Name:{{book.name}}</a><br>ISBNnumer:{{book.isbnnumber}}<br>copy_number:{{book.copyno}}<br>Availability:{{book.status}}</h6>
+</td>
+</table>
+</div>
+{% endfor %}
+
+</div>
+</td>
+
+
+
+</tr>
+</table>
+
+
+</body>
+</html>

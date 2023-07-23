@@ -1,0 +1,55 @@
+{% extends "web_app/base.html" %}
+{% load static %}
+    
+{% block content %}
+
+    
+    <div class="product-big-title-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="product-bit-title text-center">
+                        <h2> NEVER STOP LEARNING!! </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="single-product-area">
+        <div class="zigzag-bottom"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="product-content-right">
+                        
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="product-images">
+                                    <div class="product-main-img">
+                                        <img src="{%  static  'web_app/img/DATABASE.jpg'  %}" alt="">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                            <div class="col-sm-6">
+                                <div class="product-inner">
+                                    <h2 class="product-name">Name of the book:database<br>Author:dsamanta</h2>
+                                        
+                                    <h4>this is a very standard book and this book is very useful to gain knowledge about databse and information systems</h4>
+                                    <form action="">
+                                        <button class="add_to_cart_button" type="submit">Add to favorites</button>
+                                    </form>   
+                                    
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>                
+                </div>
+            </div>
+        </div>
+    </div>
+   
+{% endblock %}
